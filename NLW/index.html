@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Esports Meta</title>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Esports logo">
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h2 class="title">Assistente de Meta</h2>
+                <p>Pergunte sobre estratégias, builds, e dicas para seus jogos!</p>
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Informe a API Key do Gemini..." required>
+
+                    <select id="gameSelect">
+                        <option value="">Selecione um Jogo</option>
+                        <option value="lol">League of Legends</option>
+                        <option value="hl">Half-Life</option>
+                        <option value="stardew">Stardew Valley</option>
+                    </select>
+
+                    <input id="question" type="text" placeholder="Melhor build para ADC..." required>
+
+                    <button id="askButton">
+                        Perguntar
+                    </button>
+
+                    <div id="aiResponse">
+                        <div class="response-content"></div>
+                        
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+<script src = "https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+<script src="script.js"></script> 
+</body>
+</html>
